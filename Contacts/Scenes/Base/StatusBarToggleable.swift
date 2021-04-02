@@ -11,6 +11,7 @@ import UIKit
 protocol StatusBarToggleable: class {
   var statusBarShouldBeHidden: Bool { get set }
   var statusBarAnimationStyle: UIStatusBarAnimation { get set }
+  var statusBarStyle: UIStatusBarStyle { get set }
 }
 
 extension StatusBarToggleable where Self: UIViewController {

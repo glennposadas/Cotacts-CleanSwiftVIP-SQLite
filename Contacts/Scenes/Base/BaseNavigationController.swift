@@ -43,7 +43,7 @@ class BaseNavigationController: UINavigationController, StatusBarToggleable {
   
   var statusBarShouldBeHidden: Bool = false
   var statusBarAnimationStyle: UIStatusBarAnimation = .slide
-  
+  var statusBarStyle: UIStatusBarStyle = .lightContent
   
   override var prefersStatusBarHidden: Bool { statusBarShouldBeHidden }
   override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation { statusBarAnimationStyle }
