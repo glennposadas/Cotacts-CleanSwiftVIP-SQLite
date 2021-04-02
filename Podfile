@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '13.0'
+platform :ios, '14.1'
 use_frameworks!
 inhibit_all_warnings!
 
@@ -11,11 +11,11 @@ def test_pods
 end
 
 target 'Contacts' do
+  pod 'CocoaLumberjack/Swift'
   pod 'Kingfisher'
-  pod 'MagicalRecord/CocoaLumberjack', :git => 'https://github.com/magicalpanda/MagicalRecord'
   pod 'Moya'
-  pod 'RxSwift'
   pod 'SnapKit'
+  pod 'SwiftDate'
   
   target 'ContactsTests' do
     test_pods
