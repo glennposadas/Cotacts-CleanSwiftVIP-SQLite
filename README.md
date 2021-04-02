@@ -4,33 +4,32 @@
 
 ---
 
-**UPDATE** as March 26, 2021, just the same day I started this sample project, I've decided to discontinue this, perhaps for now.
-I realized I'm wasting a bit time trying to do this project and my main full-time project back and forth.
-I haven't learned Clean Swift architecture fully. I've decided to just learn such architecture through my main project.
-Since they're practically the same structure and setup, except the project name.
-
----
-
 ## Tech Stacks
 
 
-The project was built using **Xcode 12.3**, **Swift 5.3.2**.
-Persistence of data is handled using Core Data.
+The project was built using **Xcode 12.3**, **Swift 5.3.2**. 
+iOS deployment target: **iOS 14.1**.
+Persistence of data is handled using `SQLite` RDBMS powered by `GRDB` layer. 
 
-Dependencies are managed by [Cocoapods](https://cocoapods.org/).
+All UI are made programmatically powered by `SnapKit`.
 
-[Clean-swift](http://clean-swift.com/) is the architectural pattern used together with [RxSwift](https://github.com/ReactiveX/RxSwift).
+Dependencies are managed by Swift Package Manager (SPM) and [Cocoapods](https://cocoapods.org/).
 
-NodeJS backend will be deployed on to Heroku.
+[Clean-swift VIP](http://clean-swift.com/) is the architectural pattern used together with [Combine](https://developer.apple.com/documentation/combine).
 
-**Unit Testing** is powered by Quick and Nimble.
-**UI Tests** use Apple's vanilla **XCUITest** test framework.
+**Unit Testing** is powered by `Quick` and `Nimble`.
+**UI Tests** use Apple's vanilla `XCUITest` test framework.
   
 ## Dependencies
 
-- CocoaLumberjack - https://github.com/CocoaLumberjack/CocoaLumberjack
-- MagicalRecord - https://github.com/magicalpanda/MagicalRecord
+- CocoaLumberjack/Swift - https://github.com/CocoaLumberjack/CocoaLumberjack
+- Firebase - https://github.com/firebase/firebase-ios-sdk
+- GRDB - https://github.com/groue/GRDB.swift
+- Kingfisher - https://github.com/onevcat/Kingfisher
 - Moya - https://github.com/Moya/Moya
-- Nimble - https://github.com/Quick/Nimble
-- RxSwift - https://github.com/ReactiveX/RxSwift
-- SnapKit - https://github.com/SnapKit/SnapKit
+- SwiftDate - https://github.com/malcommac/SwiftDate
+
+ ### Dependencies for Test Targets
+ 
+ - Quick - https://github.com/Quick/Quick
+ - Nimble - https://github.com/Quick/Nimble
