@@ -8,10 +8,7 @@
 
 import UIKit
 
-extension UIColor {
-  /// Color mainly used for error internet notifier
-  static let errorRed: UIColor = UIColor(hex: "ff3f34")
-  
+extension UIColor { 
   convenience init(hex: String, alpha: CGFloat = 1.0) {
     var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
     

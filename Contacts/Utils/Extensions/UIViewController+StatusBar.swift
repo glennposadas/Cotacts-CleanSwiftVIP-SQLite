@@ -11,12 +11,16 @@ import UIKit
 extension UIViewController {
   /// A helper function that can be called from any controller.
   /// Example: `navigationController?.setStatusBarAppearance()`.
-  func setStatusBarAppearance(statusBarShouldBeHidden hidden: Bool,
-                              statusBarAnimationStyle: UIStatusBarAnimation = .slide) {
+  func setStatusBarAppearance(
+    statusBarShouldBeHidden hidden: Bool,
+    statusBarAnimationStyle: UIStatusBarAnimation = .slide,
+    statusBarStyle: UIStatusBarStyle = .lightContent
+  ) {
     func set(controller: BaseNavigationController) {
       controller.statusBarShouldBeHidden = hidden
       controller.statusBarAnimationStyle = statusBarAnimationStyle
-      controller.updateStatusBarAppearance(completion: nil)
+      controller.statusBarStyle = statusBarStyle
+      controller.updateStatusBarAppearance()
     }
     if let controller = self as? BaseNavigationController {
       set(controller: controller)
