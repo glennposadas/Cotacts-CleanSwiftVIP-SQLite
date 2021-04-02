@@ -13,7 +13,7 @@ Persistence of data is handled using `SQLite` RDBMS powered by `GRDB` layer.
 
 All UI are made programmatically powered by `SnapKit`.
 
-Dependencies are managed by Swift Package Manager (SPM) and [Cocoapods](https://cocoapods.org/).
+Dependencies are managed by (Cocoapods](https://cocoapods.org/).
 
 [Clean-swift VIP](http://clean-swift.com/) is the architectural pattern used together with [Combine](https://developer.apple.com/documentation/combine).
 

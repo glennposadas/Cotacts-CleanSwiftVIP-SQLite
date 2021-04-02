@@ -13,6 +13,7 @@ end
 target 'Contacts' do
   pod 'CocoaLumberjack/Swift'
   pod 'Kingfisher'
+  pod 'GRDB.swift'
   pod 'Moya'
   pod 'SnapKit'
   pod 'SwiftDate'

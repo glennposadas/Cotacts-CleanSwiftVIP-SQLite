@@ -387,6 +387,8 @@
 			dependencies = (
 			);
 			name = Contacts;
+			packageProductDependencies = (
+			);
 			productName = Chaos;
 			productReference = 455FC0D8260CBBB2001406B1 /* Contacts.app */;
 			productType = "com.apple.product-type.application";
@@ -461,6 +463,8 @@
 				Base,
 			);
 			mainGroup = 455FC0CF260CBBB2001406B1;
+			packageReferences = (
+			);
 			productRefGroup = 455FC0D9260CBBB2001406B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
