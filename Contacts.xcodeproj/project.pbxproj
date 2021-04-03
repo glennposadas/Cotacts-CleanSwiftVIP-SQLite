@@ -19,7 +19,6 @@
 		455309292617B10A00E12498 /* UILabel+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4553091F2617B10A00E12498 /* UILabel+Setup.swift */; };
 		455FC0DC260CBBB2001406B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455FC0DB260CBBB2001406B1 /* AppDelegate.swift */; };
 		455FC0DE260CBBB2001406B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455FC0DD260CBBB2001406B1 /* SceneDelegate.swift */; };
-		455FC0E6260CBBB2001406B1 /* Chaos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 455FC0E4260CBBB2001406B1 /* Chaos.xcdatamodeld */; };
 		455FC0E8260CBBB4001406B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455FC0E7260CBBB4001406B1 /* Assets.xcassets */; };
 		455FC0EB260CBBB4001406B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455FC0E9260CBBB4001406B1 /* LaunchScreen.storyboard */; };
 		4577C6D8260D056B005AC95E /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577C6D7260D056B005AC95E /* ProgressHUD.swift */; };
@@ -29,6 +28,7 @@
 		4577C72E260D7A5B005AC95E /* AppSharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577C72D260D7A5B005AC95E /* AppSharedData.swift */; };
 		4577C743260D7AB6005AC95E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577C742260D7AB6005AC95E /* Reachability.swift */; };
 		4577C74B260D7AE9005AC95E /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577C74A260D7AE9005AC95E /* CoreService.swift */; };
+		459B7D6726190172000450ED /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B7D6626190172000450ED /* Contact.swift */; };
 		45C8A59A260CE86E005A1E69 /* ChaosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C8A599260CE86E005A1E69 /* ChaosTests.swift */; };
 		45C8A5AA260CE877005A1E69 /* ChaosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C8A5A9260CE877005A1E69 /* ChaosUITests.swift */; };
 		45CCFF01260DF143004A11F7 /* ContactListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CCFEFB260DF143004A11F7 /* ContactListPresenter.swift */; };
@@ -87,7 +87,6 @@
 		455FC0D8260CBBB2001406B1 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		455FC0DB260CBBB2001406B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		455FC0DD260CBBB2001406B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		455FC0E5260CBBB2001406B1 /* Chaos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chaos.xcdatamodel; sourceTree = "<group>"; };
 		455FC0E7260CBBB4001406B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		455FC0EA260CBBB4001406B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		455FC0EC260CBBB4001406B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		4577C72D260D7A5B005AC95E /* AppSharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSharedData.swift; sourceTree = "<group>"; };
 		4577C742260D7AB6005AC95E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4577C74A260D7AE9005AC95E /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
+		459B7D6626190172000450ED /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		45BAE626260CC4FA0058AE43 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		45BAE6D6260CD2260058AE43 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		45C8A597260CE86E005A1E69 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,7 +289,7 @@
 		45BAE6A5260CD1740058AE43 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				455FC0E4260CBBB2001406B1 /* Chaos.xcdatamodeld */,
+				459B7D6626190172000450ED /* Contact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -594,7 +594,6 @@
 				455309292617B10A00E12498 /* UILabel+Setup.swift in Sources */,
 				45CCFF20260DF19D004A11F7 /* ContactViewerRouter.swift in Sources */,
 				45CCFF1E260DF19D004A11F7 /* ContactViewerController.swift in Sources */,
-				455FC0E6260CBBB2001406B1 /* Chaos.xcdatamodeld in Sources */,
 				45CCFF57260E03E3004A11F7 /* StatusBarToggleable.swift in Sources */,
 				455309252617B10A00E12498 /* Bundle+Versions.swift in Sources */,
 				45CCFF03260DF143004A11F7 /* ContactListInteractor.swift in Sources */,
@@ -612,6 +611,7 @@
 				45CCFF46260E0062004A11F7 /* BaseController.swift in Sources */,
 				45CCFF04260DF143004A11F7 /* ContactListController.swift in Sources */,
 				45CCFF1B260DF19D004A11F7 /* ContactViewerPresenter.swift in Sources */,
+				459B7D6726190172000450ED /* Contact.swift in Sources */,
 				455FC0DE260CBBB2001406B1 /* SceneDelegate.swift in Sources */,
 				4577C743260D7AB6005AC95E /* Reachability.swift in Sources */,
 				455309222617B10A00E12498 /* UIView+Shimmer.swift in Sources */,
@@ -951,19 +951,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		455FC0E4260CBBB2001406B1 /* Chaos.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				455FC0E5260CBBB2001406B1 /* Chaos.xcdatamodel */,
-			);
-			currentVersion = 455FC0E5260CBBB2001406B1 /* Chaos.xcdatamodel */;
-			path = Chaos.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 455FC0D0260CBBB2001406B1 /* Project object */;
 }
