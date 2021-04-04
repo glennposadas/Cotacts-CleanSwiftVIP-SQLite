@@ -2,6 +2,12 @@
 
 **Contacts** is yet another contact sample app made to learn better the clean swift architecture.
 
+**UPDATE - April 4, 2021**
+Once again, I've decided to stop this prototype for now. I hit the same problem that I had before. That is, everytime I update this codebase, I have to do the same updates
+to my main project in the company. So I reckoned it's best if I do the prototype thing in my main project.
+
+I shall update this once we get our project released.
+
 ---
 
 ## Tech Stacks

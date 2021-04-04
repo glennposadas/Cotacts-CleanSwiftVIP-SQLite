@@ -52,19 +52,20 @@ class BaseNavigationController: UINavigationController, StatusBarToggleable {
   // MARK: Functions
   
   convenience init(
-      rootViewController: UIViewController,
-      statusBarShouldBeHidden: Bool = false,
-      statusBarAnimationStyle: UIStatusBarAnimation = .slide) {
-      
-      self.init(rootViewController: rootViewController)
-      self.statusBarShouldBeHidden = statusBarShouldBeHidden
-      self.statusBarAnimationStyle = statusBarAnimationStyle
+    rootViewController: UIViewController,
+    statusBarShouldBeHidden: Bool = false,
+    statusBarAnimationStyle: UIStatusBarAnimation = .slide) {
+    
+    self.init(rootViewController: rootViewController)
+    self.statusBarShouldBeHidden = statusBarShouldBeHidden
+    self.statusBarAnimationStyle = statusBarAnimationStyle
+    navigationBar.prefersLargeTitles = true
   }
   
   override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(animated)
-      
-      updateStatusBarAppearance(completion: nil)
+    super.viewWillAppear(animated)
+    
+    updateStatusBarAppearance(completion: nil)
   }
   
   override func pushViewController(_ viewController: UIViewController, animated: Bool) {

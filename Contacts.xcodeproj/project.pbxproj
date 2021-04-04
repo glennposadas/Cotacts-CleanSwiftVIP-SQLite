@@ -30,6 +30,9 @@
 		4577C74B260D7AE9005AC95E /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577C74A260D7AE9005AC95E /* CoreService.swift */; };
 		459B7D6726190172000450ED /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B7D6626190172000450ED /* Contact.swift */; };
 		459B7D88261909EB000450ED /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 459B7D87261909EB000450ED /* GRDB */; };
+		459B7D982619CFD4000450ED /* ContactTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B7D972619CFD4000450ED /* ContactTableCell.swift */; };
+		459B7DA12619D037000450ED /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B7DA02619D037000450ED /* BaseTableCell.swift */; };
+		459B7DAC2619DED3000450ED /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B7DAB2619DED3000450ED /* ReusableView.swift */; };
 		45C8A59A260CE86E005A1E69 /* ChaosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C8A599260CE86E005A1E69 /* ChaosTests.swift */; };
 		45C8A5AA260CE877005A1E69 /* ChaosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C8A5A9260CE877005A1E69 /* ChaosUITests.swift */; };
 		45CCFF01260DF143004A11F7 /* ContactListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CCFEFB260DF143004A11F7 /* ContactListPresenter.swift */; };
@@ -99,6 +102,9 @@
 		4577C742260D7AB6005AC95E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4577C74A260D7AE9005AC95E /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
 		459B7D6626190172000450ED /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		459B7D972619CFD4000450ED /* ContactTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableCell.swift; sourceTree = "<group>"; };
+		459B7DA02619D037000450ED /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
+		459B7DAB2619DED3000450ED /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		45BAE626260CC4FA0058AE43 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		45BAE6D6260CD2260058AE43 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		45C8A597260CE86E005A1E69 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +236,23 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		459B7D962619CFCB000450ED /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				459B7D972619CFD4000450ED /* ContactTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		459B7D9F2619D02B000450ED /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				459B7DA02619D037000450ED /* BaseTableCell.swift */,
+				459B7DAB2619DED3000450ED /* ReusableView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		45BAE693260CD1030058AE43 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +340,7 @@
 		45CCFEF9260DF121004A11F7 /* Contact List */ = {
 			isa = PBXGroup;
 			children = (
+				459B7D962619CFCB000450ED /* Cell */,
 				45CCFEFB260DF143004A11F7 /* ContactListPresenter.swift */,
 				45CCFEFC260DF143004A11F7 /* ContactListModels.swift */,
 				45CCFEFD260DF143004A11F7 /* ContactListInteractor.swift */,
@@ -343,6 +367,7 @@
 		45CCFF40260DFFA2004A11F7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				459B7D9F2619D02B000450ED /* Cell */,
 				45CCFF42260E0062004A11F7 /* BaseNavigationController.swift */,
 				45CCFF43260E0062004A11F7 /* BaseController.swift */,
 				45CCFF44260E0062004A11F7 /* FullscreenPopGestureRecognizerDelegate.swift */,
@@ -603,6 +628,7 @@
 				45CCFF03260DF143004A11F7 /* ContactListInteractor.swift in Sources */,
 				4577C74B260D7AE9005AC95E /* CoreService.swift in Sources */,
 				455FC0DC260CBBB2001406B1 /* AppDelegate.swift in Sources */,
+				459B7DAC2619DED3000450ED /* ReusableView.swift in Sources */,
 				455309272617B10A00E12498 /* UIViewController+StatusBar.swift in Sources */,
 				45CCFF1F260DF19D004A11F7 /* ContactViewerWorker.swift in Sources */,
 				455309282617B10A00E12498 /* StringProtocol+NSRange.swift in Sources */,
@@ -614,12 +640,14 @@
 				45CCFF02260DF143004A11F7 /* ContactListModels.swift in Sources */,
 				45CCFF46260E0062004A11F7 /* BaseController.swift in Sources */,
 				45CCFF04260DF143004A11F7 /* ContactListController.swift in Sources */,
+				459B7DA12619D037000450ED /* BaseTableCell.swift in Sources */,
 				45CCFF1B260DF19D004A11F7 /* ContactViewerPresenter.swift in Sources */,
 				459B7D6726190172000450ED /* Contact.swift in Sources */,
 				455FC0DE260CBBB2001406B1 /* SceneDelegate.swift in Sources */,
 				4577C743260D7AB6005AC95E /* Reachability.swift in Sources */,
 				455309222617B10A00E12498 /* UIView+Shimmer.swift in Sources */,
 				45CCFF45260E0062004A11F7 /* BaseNavigationController.swift in Sources */,
+				459B7D982619CFD4000450ED /* ContactTableCell.swift in Sources */,
 				455309242617B10A00E12498 /* UIViewController+Alert.swift in Sources */,
 				455309202617B10A00E12498 /* UIColor+Hex.swift in Sources */,
 				455309212617B10A00E12498 /* String+Validities.swift in Sources */,

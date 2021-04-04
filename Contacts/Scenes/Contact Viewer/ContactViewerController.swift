@@ -32,13 +32,16 @@ final class ContactViewerController: BaseController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .blue
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
-    navigationController?.setStatusBarAppearance(statusBarShouldBeHidden: true)
+    setStatusBarAppearance(
+      statusBarShouldBeHidden: true,
+      statusBarAnimationStyle: .fade,
+      statusBarStyle: .lightContent
+    )
   }
   
   // MARK: Setup
@@ -56,6 +59,20 @@ final class ContactViewerController: BaseController {
     presenter.viewController = viewController
     router.viewController = viewController
     router.dataStore = interactor
+  }
+  
+  // MARK: - ViewConfigurable
+  
+  override func setupView() {
+    super.setupView()
+    
+    title = "Contact Viewer"
+    view.backgroundColor = .red
+  }
+  
+  override func setupLayout() {
+    super.setupLayout()
+    
   }
 }
 
